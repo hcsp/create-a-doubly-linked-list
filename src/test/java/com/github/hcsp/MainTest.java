@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class MainTest {
     @Test
     public void linkedListTest() {
-        LinkedListNode l = Main.createLinkedList();
+        LinkedListNode l = Main.createDoublyLinkedList();
         assertEquals(1, l.value);
         assertEquals(2, l.next.value);
         assertEquals(3, l.next.next.value);
