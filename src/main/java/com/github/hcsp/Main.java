@@ -19,10 +19,9 @@ public class Main {
         node2.value = 2;
         node3.value = 3;
         node1.next = node2;
-
         node2.next = node3;
-        node2.prev = node1;
 
+        node2.prev = node1;
         node3.prev = node2;
         return node1;
     }
