@@ -9,25 +9,7 @@ public class Main {
         System.out.println("" + tail.value + "," + tail.prev.value + "," + tail.prev.prev.value);
     }
 
-
     // Create a doubly linked list: 1 ⇋ 2 ⇋ 3 and return the head node
     // 创建一个这样的双向链表：1 ⇋ 2 ⇋ 3 并返回头节点
-    public static LinkedListNode createDoublyLinkedList() {
-        LinkedListNode head = getLinkedListNode(1);
-        LinkedListNode second = getLinkedListNode(2);
-        LinkedListNode third = getLinkedListNode(3);
-
-        head.next = second;
-        second.next = third;
-        second.prev = head;
-        third.prev = second;
-
-        return head;
-    }
-
-    public static LinkedListNode getLinkedListNode(int i) {
-        LinkedListNode head = new LinkedListNode();
-        head.value = i;
-        return head;
-    }
+    public static LinkedListNode createDoublyLinkedList() {}
 }
