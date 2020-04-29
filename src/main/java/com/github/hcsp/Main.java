@@ -1,7 +1,5 @@
 package com.github.hcsp;
 
-import java.util.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
         // Complete createDoublyLinkedList() method to make the program output "3,2,1"
@@ -13,20 +11,5 @@ public class Main {
 
     // Create a doubly linked list: 1 ⇋ 2 ⇋ 3 and return the head node
     // 创建一个这样的双向链表：1 ⇋ 2 ⇋ 3 并返回头节点
-    public static LinkedListNode createDoublyLinkedList() {
-        LinkedListNode first = new LinkedListNode();
-        LinkedListNode second = new LinkedListNode();
-        LinkedListNode third = new LinkedListNode();
-
-        first.value = 1;
-        second.value = 2;
-        third.value = 3;
-
-        first.next = second;
-        second.next = third;
-        second.prev = first;
-        third.prev = second;
-
-        return first;
-    }
+    public static LinkedListNode createDoublyLinkedList() {}
 }
