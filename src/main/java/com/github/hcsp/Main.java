@@ -11,5 +11,21 @@ public class Main {
 
     // Create a doubly linked list: 1 ⇋ 2 ⇋ 3 and return the head node
     // 创建一个这样的双向链表：1 ⇋ 2 ⇋ 3 并返回头节点
-    public static LinkedListNode createDoublyLinkedList() {}
+    public static LinkedListNode createDoublyLinkedList() {
+        LinkedListNode one = new LinkedListNode();
+        LinkedListNode two = new LinkedListNode();
+        LinkedListNode three = new LinkedListNode();
+
+        one.next = two;
+        one.value = 1;
+
+        two.prev = one;
+        two.next = three;
+        two.value = 2;
+
+        three.prev = two;
+        three.value = 3;
+
+        return one;
+    }
 }
