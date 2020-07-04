@@ -13,18 +13,17 @@ public class Main {
     // Create a doubly linked list: 1 ⇋ 2 ⇋ 3 and return the head node
     // 创建一个这样的双向链表：1 ⇋ 2 ⇋ 3 并返回头节点
     public static LinkedListNode createDoublyLinkedList() {
-        LinkedListNode node1 = new LinkedListNode();
-        node1.value = 1;
-        LinkedListNode node2 = new LinkedListNode();
-        node2.value = 2;
-        LinkedListNode node3 = new LinkedListNode();
-        node3.value = 3;
+        LinkedListNode head = new LinkedListNode();
+        head.value = 1;
 
-        node1.next = node2;
-        node2.prev = node1;
-        node2.next = node3;
-        node2.prev = node2;
+        head.next = new LinkedListNode();
+        head.next.value = 2;
+        head.next.prev = head;
 
-        return node1;
+        head.next.next = new LinkedListNode();
+        head.next.next.value = 3;
+        head.next.next.prev = head.next;
+
+        return head;
     }
 }
