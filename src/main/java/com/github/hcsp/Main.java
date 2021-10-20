@@ -1,7 +1,5 @@
 package com.github.hcsp;
 
-import javax.xml.soap.Node;
-
 public class Main {
     public static void main(String[] args) {
         // Complete createDoublyLinkedList() method to make the program output "3,2,1"
